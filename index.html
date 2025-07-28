@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>華東八日遊 互動行程</title>
+    <title>江西望仙谷、廬山八日遊 互動行程</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -90,13 +90,9 @@
             <h1 class="text-4xl font-bold text-[#A7727D]">江西望仙谷、廬山八日遊</h1>
             <p class="text-lg text-gray-600 mt-2">精彩行程總覽</p>
         </header>
-<img class='lazyload fade-in' style='width:100%; height:auto;'   alt="" src="5(759).jpg" />
-<img class='lazyload fade-in' style='width:100%; height:auto;'   alt="" src="2(1362).jpg" />
-<img class='lazyload fade-in' style='width:100%; height:auto;'   alt="" src="3(1214).jpg" />
-
 
         <section id="overview" class="mb-8 content-card p-6">
-            <h2 class="text-2xl font-bold text-center mb-4 text-[#A7727D]">每日車程時間一覽表 (小時)</h2>
+            <h2 class="text-2xl font-bold text-center mb-4 text-[#A7727D]">每日車程時間一覽 (小時)</h2>
             <p class="text-center text-gray-500 mb-4">此圖表顯示了每天主要的城市間交通所需的大約時間，幫助您了解旅途的節奏。將滑鼠懸停在長條上可查看確切時數。</p>
             <div class="chart-container">
                 <canvas id="travelTimeChart"></canvas>
@@ -179,7 +175,7 @@
                 route: "葛仙山 → 望仙谷 → 上饒",
                 attractions: [
                     { type: '📸', name: '葛仙山', description: '搭乘纜車上下，遊覽天境臺、葛仙祠、飛升臺，感受仙山的靈氣。' },
-                    { type: '�', name: '望仙谷景區', description: '探索被譽為現代仙俠世界的望仙谷，觀賞望仙瀑布，走過攬月橋，逛岩鋪老街，並欣賞網紅夜景。' }
+                    { type: '📸', name: '望仙谷景區', description: '探索被譽為現代仙俠世界的望仙谷，觀賞望仙瀑布，走過攬月橋，逛岩鋪老街，並欣賞網紅夜景。' }
                 ],
                 meals: { breakfast: '酒店內享用', lunch: '上饒風味 (RMB 60)', dinner: '合菜風味 (RMB 60)' },
                 accommodation: '★★★★★ 鑫邦大酒店或同等級'
@@ -187,10 +183,10 @@
             {
                 day: 7,
                 title: "上饒 → 金華 → 上海",
-                travelTime: 6,
+                travelTime: 6, // 假設從上饒到金華再到上海約6小時車程
                 route: "上饒 → 金華燕尾洲公園 → 上海七寶古鎮",
                 attractions: [
-                    { type: '📸', name: '金華燕尾洲公園', description: '在現代設計感的城市公園中放鬆身心。' },
+                    { type: '�', name: '金華燕尾洲公園', description: '在現代設計感的城市公園中放鬆身心。' },
                     { type: '📸', name: '上海七寶古鎮', description: '返回上海，體驗近郊古鎮的熱鬧與風情。' }
                 ],
                 meals: { breakfast: '酒店內享用', lunch: '上饒風味 (RMB 60)', dinner: '合菜風味 (RMB 60)' },
@@ -199,7 +195,7 @@
             {
                 day: 8,
                 title: "上海 → 桃園",
-                travelTime: 1.5,
+                travelTime: 1.5, // 假設從上海到機場約1.5小時
                 route: "上海 → 桃園國際機場",
                 attractions: [
                     { type: '✈️', name: '惜別與返程', description: '行程結束，前往機場搭機返回溫暖的家。' }
@@ -212,6 +208,11 @@
         document.addEventListener('DOMContentLoaded', () => {
             const navContainer = document.getElementById('day-navigation');
             const contentContainer = document.getElementById('itinerary-content');
+
+            // Clear existing navigation buttons
+            navContainer.innerHTML = ''; 
+            // Clear existing content
+            contentContainer.innerHTML = '';
 
             itineraryData.forEach((dayData, index) => {
                 const navButton = document.createElement('button');
@@ -242,6 +243,22 @@
                                     </div>
                                 `).join('')}
                             </div>
+                            <!-- 新增的圖片表格區塊 -->
+                            <div class="mt-6">
+                                <h3 class="text-xl font-bold mb-4 border-l-4 border-[#C89F91] pl-3">精彩圖片</h3>
+                                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                                    <div class="rounded-lg overflow-hidden shadow-md">
+                                        <img src="${dayData.day}1.jpg" onerror="this.onerror=null;this.src='https://placehold.co/400x300/E0D9D0/4A4A4A?text=圖片${dayData.day}1載入失敗';" alt="景點圖片 ${dayData.day}1" class="w-full h-auto object-cover rounded-lg">
+                                    </div>
+                                    <div class="rounded-lg overflow-hidden shadow-md">
+                                        <img src="${dayData.day}2.jpg" onerror="this.onerror=null;this.src='https://placehold.co/400x300/E0D9D0/4A4A4A?text=圖片${dayData.day}2載入失敗';" alt="景點圖片 ${dayData.day}2" class="w-full h-auto object-cover rounded-lg">
+                                    </div>
+                                    <div class="rounded-lg overflow-hidden shadow-md">
+                                        <img src="${dayData.day}3.jpg" onerror="this.onerror=null;this.src='https://placehold.co/400x300/E0D9D0/4A4A4A?text=圖片${dayData.day}3載入失敗';" alt="景點圖片 ${dayData.day}3" class="w-full h-auto object-cover rounded-lg">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 圖片表格區塊結束 -->
                         </div>
                         <div class="space-y-6">
                             <div class="content-card p-6">
@@ -273,6 +290,12 @@
                     document.getElementById(`day-${day}`).classList.remove('hidden');
                 }
             });
+
+            // Destroy existing chart instance if it exists to prevent memory leaks and re-render issues
+            const existingChart = Chart.getChart("travelTimeChart");
+            if (existingChart) {
+                existingChart.destroy();
+            }
 
             const ctx = document.getElementById('travelTimeChart').getContext('2d');
             new Chart(ctx, {
@@ -320,9 +343,3 @@
                         }
                     }
                 }
-            });
-        });
-    </script>
-</body>
-</html>
-�
