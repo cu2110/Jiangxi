@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>江西望仙谷.龍虎山.廬山自由行8日行程</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+        .itinerary-card {
+            background-color: white;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .itinerary-card:hover {
+            transform: translateY(-5px);
+        }
+        .day-header {
+            border-bottom: 2px solid #e5e7eb;
+        }
+        .meal-info span {
+            font-weight: 600;
+        }
+        .accordion-button {
+            transition: transform 0.3s ease;
+        }
+        .accordion-button.rotate {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 p-4 sm:p-8">
+    <div class="container bg-white rounded-3xl shadow-xl p-6 sm:p-10">
+        <!-- Header Section -->
+        <header class="text-center mb-10">
+            <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-2">江西望仙谷.龍虎山.廬山自由行8日</h1>
+            <p class="text-lg text-gray-600">日期: 暫定114年11月30日</p>
+        </header>
+
+        <!-- Itinerary List -->
+        <div id="itinerary-list" class="space-y-8">
+            <!-- Day 1 -->
+            <div class="itinerary-card p-6">
+                <div class="day-header flex justify-between items-center mb-4 pb-4 cursor-pointer" onclick="toggleAccordion('day1')">
+                    <h2 class="text-2xl font-bold text-indigo-600">第1天</h2>
+                    <p class="text-lg text-gray-700 font-semibold">桃園 / 杭州 - 衢州【水門亭歷史文化街區】</p>
+                    <svg id="arrow-day1" class="w-6 h-6 text-gray-500 accordion-button" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </div>
+                <div id="content-day1" class="accordion-content hidden">
+                    <div class="space-y-4">
+                        <p class="text-gray-700 leading-relaxed">
+                            今日帶著愉快雀躍的心情集合於桃園國際機場搭乘豪華客機飛往素有「人間天堂」之稱的杭州市。
+                            【杭州】簡稱“杭”,古稱臨安、錢塘、武林,是浙江省轄地級市、浙江省省會、副省級市、超大城市、六大古都之一,杭州都市圈核心城市。
+                            【駱賓王公園】一個以紀念唐代義烏籍著名詩人駱賓王為內容的歷史文化公園。
+                            【水亭門古街區】位於衢州城內西隅,是衢州保留較完整、能體現古城風貌的街區。
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="p-4 bg-gray-50 rounded-lg">
+                                <h3 class="font-bold text-gray-800 mb-2">餐食</h3>
+                                <div class="flex flex-col space-y-2 text-gray-600 meal-info">
+                                    <p><span>早餐:</span> XXX</p>
+                                    <p><span>午餐:</span> 機上簡餐</p>
+                                    <p><span>晚餐:</span> 中式合菜 RMB60/人</p>
+                                </div>
+                            </div>
+                            <div class="p-4 bg-gray-50 rounded-lg">
+                                <h3 class="font-bold text-gray-800 mb-2">住宿</h3>
+                                <p class="text-gray-600">準★★★★★衢州東方大酒店或同級</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 2 -->
+            <div class="itinerary-card p-6">
+                <div class="day-header flex justify-between items-center mb-4 pb-4 cursor-pointer" onclick="toggleAccordion('day2')">
+                    <h2 class="text-2xl font-bold text-indigo-600">第2天</h2>
+                    <p class="text-lg text-gray-700 font-semibold">衢州 - 望仙谷【夜景】 - 上饒</p>
+                    <svg id="arrow-day2" class="w-6 h-6 text-gray-500 accordion-button" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </div>
+                <div id="content-day2" class="accordion-content hidden">
+                    <div class="space-y-4">
+                        <p class="text-gray-700 leading-relaxed">
+                            【望仙谷】中國4A級景區，是一個充滿神秘色彩的旅遊勝地。
+                            【青雲橋】一座單拱鋼結構大橋，由此北望，峰巒起伏，雲霧出岫，氣勢雄偉。
+                            【三疊水】位於峽谷兩溪的交匯處，產生了形式不同、水量不同、水聲各異的疊水景觀。
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="p-4 bg-gray-50 rounded-lg">
+                                <h3 class="font-bold text-gray-800 mb-2">餐食</h3>
+                                <div class="flex flex-col space-y-2 text-gray-600 meal-info">
+                                    <p><span>早餐:</span> 酒店內早餐</p>
+                                    <p><span>午餐:</span> 中式合菜 RMB50/人</p>
+                                    <p><span>晚餐:</span> 望仙風味 RMB50/人</p>
+                                </div>
+                            </div>
+                            <div class="p-4 bg-gray-50 rounded-lg">
+                                <h3 class="font-bold text-gray-800 mb-2">住宿</h3>
+                                <p class="text-gray-600">準★★★★★鑫邦大酒店或同級</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 3 -->
+            <div class="itinerary-card p-6">
+                <div class="day-header flex justify-between items-center mb-4 pb-4 cursor-pointer" onclick="toggleAccordion('day3')">
+                    <h2 class="text-2xl font-bold text-indigo-600">第3天</h2>
+                    <p class="text-lg text-gray-700 font-semibold">上饒 - 龍虎山【天師府、竹筏遊仙水岩】 - 南昌</p>
+                    <svg id="arrow-day3" class="w-6 h-6 text-gray-500 accordion-button" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </div>
+                <div id="content-day3" class="accordion-content hidden">
+                    <div class="space-y-4">
+                        <p class="text-gray-700 leading-relaxed">
+                            【龍虎山風景區】中國第八處世界自然遺產，是中國道教的發祥地。
+                            【天師府】位於鷹潭上清鎮，是張氏歷代起居之所和祀神之處。
+                            【上清古鎮】已經有上千年的歷史，沿河的吊腳樓和船埠頭顯現出江南水鄉的風格。
+                            【船遊仙水岩】坐上竹筏下行，乘小船上行，欣賞碧水丹山美景。
+                            【懸棺表演】古越、僚人特有的一種喪葬形式。
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="p-4 bg-gray-50 rounded-lg">
+                                <h3 class="font-bold text-gray-800 mb-2">餐食</h3>
+                                <div class="flex flex-col space-y-2 text-gray-600 meal-info">
+                                    <p><span>早餐:</span> 酒店內早餐</p>
+                                    <p><span>午餐:</span> 龍虎風味 RMB50/人</p>
+                                    <p><span>晚餐:</span> 三國水滸宴 RMB60/人</p>
+                                </div>
+                            </div>
+                            <div class="p-4 bg-gray-50 rounded-lg">
+                                <h3 class="font-bold text-gray-800 mb-2">住宿</h3>
+                                <p class="text-gray-600">★★★★★融創永樂半山酒店或恒大酒店或同級</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Day 4 -->
+            <div class="itinerary-card p-6">
+                <div class="day-header flex justify-between items-center mb-4 pb-4 cursor-pointer" onclick="toggleAccordion('day4')">
+                    <h2 class="text-2xl font-bold text-indigo-600">第4天</h2>
+                    <p class="text-lg text-gray-700 font-semibold">南昌【滕王閣】 - 廬山【美廬別墅、含鄱口、錦秀谷】</p>
+                    <svg id="arrow-day4" class="w-6 h-6 text-gray-500 accordion-button" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </div>
+                <div id="content-day4" class="accordion-content hidden">
+                    <div class="space-y-4">
+                        <p class="text-gray-700 leading-relaxed">
+                            【滕王閣】江南三大名樓之首,因王勃寫下《滕王閣序》而聞名天下。
+                            【美廬別墅】蔣介石與宋美齡夏季度假的地方，也是國共兩黨最高領袖都住過的別墅。
+                            【含鄱口】廬山觀日出的勝地，可遠眺鄱陽湖。
+                            【如琴湖】因湖面形如提琴而得名，景緻清雅。
+                            【花徑公園】相傳是唐代詩人白居易詠詩《大林寺桃花》的地方。
+                            【錦繡谷】一路景色如錦繡畫卷，令人陶醉。
+                            【仙人洞】天然砂岩石洞，傳說呂洞賓在此修道成仙。
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="p-4 bg-gray-50 rounded-lg">
+                                <h3 class="font-bold text-gray-800 mb-2">餐食</h3>
+                                <div class="flex flex-col space-y-2 text-gray-600 meal-info">
+                                    <p><span>早餐:</span> 酒店內早餐</p>
+                                    <p><span>午餐:</span> 中式合菜 RMB50/人</p>
+                                    <p><span>晚餐:</span> 中式合菜 RMB60/人</p>
+                                </div>
+                            </div>
+                            <div class="p-4 bg-gray-50 rounded-lg">
+                                <h3 class="font-bold text-gray-800 mb-2">住宿</h3>
+                                <p class="text-gray-600">準★★★★★廬山開元名庭度假飯店或同級</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 5 -->
+            <div class="itinerary-card p-6">
+                <div class="day-header flex justify-between items-center mb-4 pb-4 cursor-pointer" onclick="toggleAccordion('day5')">
+                    <h2 class="text-2xl font-bold text-indigo-600">第5天</h2>
+                    <p class="text-lg text-gray-700 font-semibold">廬山 - 景德鎮【皇窯景區】 - 婺源【婺女洲】</p>
+                    <svg id="arrow-day5" class="w-6 h-6 text-gray-500 accordion-button" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </div>
+                <div id="content-day5" class="accordion-content hidden">
+                    <div class="space-y-4">
+                        <p class="text-gray-700 leading-relaxed">
+                            【景德鎮】四大名鎮之一，素有「瓷都」之稱。
+                            【景德鎮皇窯景區】全景再現、活態傳承、真實演繹歷代皇家御窯製瓷技藝。
+                            【婺源】被譽為“中國最美的鄉村“，風景如詩如畫。
+                            【婺女洲景區】以婺女飛天傳說為核心，集多種業態為一體的綜合型文化旅遊度假目的地。
+                            【非遺打鐵花】中國國家級非物質文化遺產，鐵水在夜空中綻放出唯美震撼的火花。
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="p-4 bg-gray-50 rounded-lg">
+                                <h3 class="font-bold text-gray-800 mb-2">餐食</h3>
+                                <div class="flex flex-col space-y-2 text-gray-600 meal-info">
+                                    <p><span>早餐:</span> 酒店內早餐</p>
+                                    <p><span>午餐:</span> 景德鎮瓷宴 RMB70/人</p>
+                                    <p><span>晚餐:</span> 婺女風味 RMB60/人</p>
+                                </div>
+                            </div>
+                            <div class="p-4 bg-gray-50 rounded-lg">
+                                <h3 class="font-bold text-gray-800 mb-2">住宿</h3>
+                                <p class="text-gray-600">★★★★萬卷酒店或同級</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 6 -->
+            <div class="itinerary-card p-6">
+                <div class="day-header flex justify-between items-center mb-4 pb-4 cursor-pointer" onclick="toggleAccordion('day6')">
+                    <h2 class="text-2xl font-bold text-indigo-600">第6天</h2>
+                    <p class="text-lg text-gray-700 font-semibold">婺源 - 建德【嚴州古城】 - 嘉興【南湖遊船】</p>
+                    <svg id="arrow-day6" class="w-6 h-6 text-gray-500 accordion-button" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </div>
+                <div id="content-day6" class="accordion-content hidden">
+                    <div class="space-y-4">
+                        <p class="text-gray-700 leading-relaxed">
+                            【嚴州古城景區】浙江省杭州市建德市下轄的一個千年古鎮。
+                            【嘉興南湖】與南京玄武湖和杭州西湖並稱江南三大名湖，素來以迷人景色著稱於世。
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="p-4 bg-gray-50 rounded-lg">
+                                <h3 class="font-bold text-gray-800 mb-2">餐食</h3>
+                                <div class="flex flex-col space-y-2 text-gray-600 meal-info">
+                                    <p><span>早餐:</span> 酒店內早餐</p>
+                                    <p><span>午餐:</span> 建德風味 RMB50/人</p>
+                                    <p><span>晚餐:</span> 烏鎮風味 RMB80/人</p>
+                                </div>
+                            </div>
+                            <div class="p-4 bg-gray-50 rounded-lg">
+                                <h3 class="font-bold text-gray-800 mb-2">住宿</h3>
+                                <p class="text-gray-600">準★★★★★雷迪森阳光大酒店或同級</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Day 7 -->
+            <div class="itinerary-card p-6">
+                <div class="day-header flex justify-between items-center mb-4 pb-4 cursor-pointer" onclick="toggleAccordion('day7')">
+                    <h2 class="text-2xl font-bold text-indigo-600">第7天</h2>
+                    <p class="text-lg text-gray-700 font-semibold">嘉興【月河老街】 - 上海【廣富林遺址公園、七寶古鎮】</p>
+                    <svg id="arrow-day7" class="w-6 h-6 text-gray-500 accordion-button" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </div>
+                <div id="content-day7" class="accordion-content hidden">
+                    <div class="space-y-4">
+                        <p class="text-gray-700 leading-relaxed">
+                            【廣富林遺址公園】這裡的遺址涵蓋了五千多年歷史，探明了上海多元移民的最初源頭。
+                            【廣富林文化展示館】獨特的“水上金字塔”建築，極具視覺衝擊力。
+                            【朵雲書院】主打文史與書畫，建築為明代徽派建築，充滿文人氣質。
+                            【七寶古鎮】距離上海市區最近的城中之鎮，風景如畫，深受遊客喜愛。
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="p-4 bg-gray-50 rounded-lg">
+                                <h3 class="font-bold text-gray-800 mb-2">餐食</h3>
+                                <div class="flex flex-col space-y-2 text-gray-600 meal-info">
+                                    <p><span>早餐:</span> 酒店內早餐</p>
+                                    <p><span>午餐:</span> 中式合菜 RMB50/人</p>
+                                    <p><span>晚餐:</span> 本幫風味 RMB80/人</p>
+                                </div>
+                            </div>
+                            <div class="p-4 bg-gray-50 rounded-lg">
+                                <h3 class="font-bold text-gray-800 mb-2">住宿</h3>
+                                <p class="text-gray-600">準★★★★★蘇寧諾富特酒店或同級</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 8 -->
+            <div class="itinerary-card p-6">
+                <div class="day-header flex justify-between items-center mb-4 pb-4 cursor-pointer" onclick="toggleAccordion('day8')">
+                    <h2 class="text-2xl font-bold text-indigo-600">第8天</h2>
+                    <p class="text-lg text-gray-700 font-semibold">上海 / 桃園</p>
+                    <svg id="arrow-day8" class="w-6 h-6 text-gray-500 accordion-button" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </div>
+                <div id="content-day8" class="accordion-content hidden">
+                    <div class="space-y-4">
+                        <p class="text-gray-700 leading-relaxed">
+                            早餐後專車接往機場，揮別為期六日的江南水鄉之旅，搭機返台。
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="p-4 bg-gray-50 rounded-lg">
+                                <h3 class="font-bold text-gray-800 mb-2">餐食</h3>
+                                <div class="flex flex-col space-y-2 text-gray-600 meal-info">
+                                    <p><span>早餐:</span> 酒店內早餐</p>
+                                    <p><span>午餐:</span> 機上簡餐</p>
+                                    <p><span>晚餐:</span> 溫暖的家</p>
+                                </div>
+                            </div>
+                            <div class="p-4 bg-gray-50 rounded-lg">
+                                <h3 class="font-bold text-gray-800 mb-2">住宿</h3>
+                                <p class="text-gray-600">溫暖的家</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // JavaScript for accordion functionality
+        function toggleAccordion(id) {
+            const content = document.getElementById(`content-${id}`);
+            const arrow = document.getElementById(`arrow-${id}`);
+            content.classList.toggle('hidden');
+            arrow.classList.toggle('rotate');
+        }
+    </script>
+</body>
+</html>
